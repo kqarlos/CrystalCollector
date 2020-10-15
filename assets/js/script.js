@@ -41,17 +41,21 @@ $(() => {
 
         //Win or loose
         if (score === target) {
-            //win
+            winsEl.innerHTML = parseInt(winsEl.innerHTML) + 1;
             setUpLevel();
         } else if (score >= target) {
+            lossesEl.innerHTML = parseInt(lossesEl.innerHTML) + 1;
             setUpLevel();
         }
     }
 
     $("#gems").on("click", (e) => {
         var id = e.target.id;
-        scoreEl.innerHTML = parseInt(scoreEl.innerHTML) + gemValues[id];
-        checkScore();
+        //makes a specific gem is clicked
+        if (id !== "gems") {
+            scoreEl.innerHTML = parseInt(scoreEl.innerHTML) + gemValues[id];
+            checkScore();
+        }
     });
 
 });
