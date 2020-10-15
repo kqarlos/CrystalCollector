@@ -13,18 +13,13 @@ $(() => {
     }
 
     //Sets up the game
-    function setUp() {
+    function setUpGame() {
         winsEl.innerHTML = 0;
         lossesEl.innerHTML = 0;
-        targetEl.innerHTML = generateRandom(19, 120);
-        scoreEl.innerHTML = 0;
-        //Gives values to the gems
-        for (gem in gemValues) {
-            gemValues[gem] = generateRandom(1, 12);
-        }
+        setUpLevel();
     }
 
-    function reset() {
+    function setUpLevel() {
         targetEl.innerHTML = generateRandom(19, 120);
         scoreEl.innerHTML = 0;
         //Gives values to the gems
@@ -38,7 +33,7 @@ $(() => {
         return Math.floor((Math.random() * (max - min)) + min);
     }
 
-    setUp();
+    setUpGame();
 
     function checkScore() {
         var target = parseInt(targetEl.innerHTML);
@@ -47,9 +42,9 @@ $(() => {
         //Win or loose
         if (score === target) {
             //win
-            reset();
+            setUpLevel();
         } else if (score >= target) {
-            reset();
+            setUpLevel();
         }
     }
 
