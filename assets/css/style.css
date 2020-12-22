@@ -1,13 +1,17 @@
+html {
+    scroll-behavior: smooth;
+}
+
 #welcome {
     background-image: url('../images/background.jpg');
 }
 
 #instructions {
-    background-image: url('../images/background.png');
+    background-image: url('../images/background2.jpg');
 }
 
 #game {
-    background-image: url('../images/background.jpg');
+    background-image: url('../images/background3.jpg');
 }
 
 .box {
