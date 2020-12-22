@@ -28,3 +28,8 @@ html {
 #logo {
     width: 50%;
 }
+
+#instructions-text, #game-content {
+    background-color: rgba(50, 155, 168, 0.5);
+}
+
