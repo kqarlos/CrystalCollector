@@ -22,49 +22,57 @@
     <!-- Welcome -->
 
     <div class="box" id="welcome">
-        <div ><h1 class="text-center" id="title">Crystal Collector!</h1></div>
+        <div class="container">
+            <h1 class="text-center" id="title">Crystal Collector!</h1>
+            <button type="button" class="btn btn-dark">Get Started</button>
+        </div>
     </div>
 
     <!-- Instructions -->
     <div class="box" id="instructions">
-        <div class="row py-4">
-            <div class="col-6">
-                <p>Game Decription:</p>
-                <p>You will be given a random number at the start of the game</p>
-                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to
-                    your total score.</p>
-                <p>You win the game by matching your total score to random numbmer, you lose the fame if your total
-                    score goes above the random number</p>
-                <p>The value of each crystal is hidden from you until youu click on it</p>
-                <p>Each time when the game starts, the game will change the values of each crystal</p>
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-6">
+                    <p>Game Decription:</p>
+                    <p>You will be given a random number at the start of the game</p>
+                    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points
+                        to
+                        your total score.</p>
+                    <p>You win the game by matching your total score to random numbmer, you lose the fame if your total
+                        score goes above the random number</p>
+                    <p>The value of each crystal is hidden from you until youu click on it</p>
+                    <p>Each time when the game starts, the game will change the values of each crystal</p>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Game -->
     <div class="box" id="game">
-        <div class="row py-2">
-            <div class="col-2">Target:
-                <p id="target"></p>
-            </div>
-            <div class="col-2">
-                <div class="row">Wins: <p id="wins">0</p>
+        <div class="container">
+            <div class="row py-2">
+                <div class="col-2">Target:
+                    <p id="target"></p>
                 </div>
-                <div class="row">Losses: <p id="losses">0</p>
+                <div class="col-2">
+                    <div class="row">Wins: <p id="wins">0</p>
+                    </div>
+                    <div class="row">Losses: <p id="losses">0</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="gems" class="row py-2">
-            <div id="gem1" class="col-1">Gem1</div>
-            <div id="gem2" class="col-1">Gem2</div>
-            <div id="gem3" class="col-1">Gem3</div>
-            <div id="gem4" class="col-1">Gem4</div>
-        </div>
-        <div class="row py-2">
-            <div class="col-6">Your total score is:</div>
-        </div>
-        <div class="row py-2">
-            <div id="score" class="col-6">0</div>
+            <div id="gems" class="row py-2">
+                <div id="gem1" class="col-1">Gem1</div>
+                <div id="gem2" class="col-1">Gem2</div>
+                <div id="gem3" class="col-1">Gem3</div>
+                <div id="gem4" class="col-1">Gem4</div>
+            </div>
+            <div class="row py-2">
+                <div class="col-6">Your total score is:</div>
+            </div>
+            <div class="row py-2">
+                <div id="score" class="col-6">0</div>
+            </div>
         </div>
     </div>
 
