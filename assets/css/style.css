@@ -2,6 +2,15 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bolder;
+    font-size: larger;
+    line-height: 1.6;
+    color: rgb(242, 235, 47);
+    letter-spacing: 2px;
+}
+
 #welcome {
     background-image: url('../images/background.jpg');
 }
@@ -27,10 +36,13 @@ html {
 
 #logo {
     width: 50%;
+    border-radius: 25px;
 }
 
 #instructions-text, #game-content {
-    background-color: rgba(50, 155, 168, 0.5);
+    background-color: rgba(61, 84, 158, 0.7);
+    border-radius: 25px;
+
 }
 
 #gems img  {
